@@ -13,7 +13,7 @@ import views from 'koa-views';
 // import KoaRouter from 'koa-router';
 import fs from 'fs';
 
-import { config, plugins } from '../config';
+import config from '../config';
 
 import socketout from '../socket/socket-out/socket-out';
 import WebSocketApi from '../socket/socket-in/socket-in';
@@ -59,7 +59,7 @@ class HttpServer {
 
         koa.use(session(sessionConfig, koa));
 
-        koa.use(plugins());
+        // koa.use(plugins());
 
         if (this.httpConfig.environment == 'development')
             koa.use(logger());

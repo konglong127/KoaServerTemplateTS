@@ -1,24 +1,7 @@
 // npm start 启动服务器
 // npm run serve 单独启动
-import moment from 'moment';
-import log from './log/log';
-import jwt from './utils/token/token';
-// import mysql from '../database/mysql';
-// import redis from '../database/redis';
 
-export const plugins= () => {
-    return async function (ctx: any, next: any) {
-        ctx.log = log;
-        ctx.jwt = jwt;
-        ctx.config = config;
-        ctx.moment = moment;
-        // ctx.mysql = mysql;
-        // ctx.redis=redis;
-        await next();
-    }
-}
-
-export const config = {
+export default {
     // wx: [
     //     {
     //         name: '',
