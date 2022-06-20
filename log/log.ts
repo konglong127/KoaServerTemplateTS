@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { config } from '../config';
+import config from '../config';
 
 export default (msg: any, type: any) => {
     fs.readdir(__dirname, 'utf-8', (err, data) => {

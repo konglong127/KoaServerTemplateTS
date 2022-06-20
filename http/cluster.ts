@@ -1,5 +1,5 @@
 import cluster from 'cluster';
-import { config } from '../config';
+import config from '../config';
 import log from '../log/log';
 import { httpServer } from './http';
 

@@ -1,4 +1,4 @@
-import { config } from '../config';
+import config from '../config';
 import { httpServer } from './http';
 
 if (config.server.type == 'https') {
