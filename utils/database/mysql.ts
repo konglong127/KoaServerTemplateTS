@@ -1,5 +1,5 @@
 import MySQL from 'mysql';
-import {config} from '../../config';
+import config from '../../config';
 const { mysql, server } = config;
 var arr:Array<any> = [];
 
