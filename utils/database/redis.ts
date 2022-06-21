@@ -1,4 +1,4 @@
-import {config} from '../../config';
+import config from '../../config';
 import Redis from 'ioredis';
 const redis = new Redis(config.redis || {});
 
